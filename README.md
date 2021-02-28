@@ -1,32 +1,32 @@
 # Shell-Commands
-Description                
-For this assignment, you will write a primitive shell that will read & execute commands using functional notation, sort of like sin(x ) in math.                 
+#Description                
+#For this assignment, you will write a primitive shell that will read & execute commands using functional notation, sort of like sin(x ) in math.                 
 
-Input                
-Read & execute commands from each filename argument. If no arguments are given, read & execute commands from standard input.                 
+#Input                
+#Read & execute commands from each filename argument. If no arguments are given, read & execute commands from standard input.                 
 
-Input format                
-The input will be a series of lines. Each line will consist of a number of whitespace-separated words. The first word in a line will be the command, the following words will be arguments. Ignore lines that contain no words.                 
+#Input format                
+#The input will be a series of lines. Each line will consist of a number of whitespace-separated words. The first word in a line will be the command, the following words will be arguments. Ignore lines that contain no words.                 
 
-A backslash escapes the next character, making it not special. The backslash itself does not become part of the word. For example, foo\ bar is treated as the seven-character word foo bar, S\pock\(o\) is treated as the eight-character word Spock(o), \ Kirk\  is treated as the six-character word  Kirk , and Bo\nes is treated as the five-letter word Bones. The effect of a backslash as the last character of a line is undefined. Unlike C++, \n and \t are not translated into newline and tab. In the examples below, the echo program is doing that translation, not hw2.                 
+#A backslash escapes the next character, making it not special. The backslash itself does not become part of the word. For example, foo\ bar is treated as the seven-character word foo bar, S\pock\(o\) is treated as the eight-character word Spock(o), \ Kirk\  is treated as the six-character word  Kirk , and Bo\nes is treated as the five-letter word Bones. The effect of a backslash as the last character of a line is undefined. Unlike C++, \n and \t are not translated into newline and tab. In the examples below, the echo program is doing that translation, not hw2.                 
 
-( and ) are always words by themselves, even if they occur next to other text, unless escaped.                 
+#( and ) are always words by themselves, even if they occur next to other text, unless escaped.                 
 
-A non-empty input line must be of this form:
+#A non-empty input line must be of this form:
 
-command(optional arguments)
-for example:
+#command(optional arguments)
+#for example:
 
-echo(hi there)
-If an input line is not of this form, produce an error message and stop the program.                 
+#echo(hi there)
+#If an input line is not of this form, produce an error message and stop the program.                 
 
-No special shell syntax is recognized. For example, the characters #*[];'"><|&~ have no particular significance.                 
+#No special shell syntax is recognized. For example, the characters #*[];'"><|&~ have no particular significance.                 
 
-Language                
-I call “(” and “)” parentheses, or parens. Some people call them brackets.                 
+#Language                
+#I call “(” and “)” parentheses, or parens. Some people call them brackets.                 
 
-Executing commands                
-The file ~cs253/Example/execute.cc contains this function:                 
+#Executing commands                
+#The file ~cs253/Example/execute.cc contains this function:                 
 
     bool execute(vector<string> command);
 It executes a command with arguments, returning true iff it succeeds. It also contains a main() that you should exclude from your program. You may copy code from this file and add it to your main.cc.                 
