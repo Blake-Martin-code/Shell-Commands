@@ -2,8 +2,7 @@
 #Description                
 #For this assignment, you will write a primitive shell that will read & execute commands using functional notation, sort of like sin(x ) in math.                 
 
-#Input                
-#Read & execute commands from each filename argument. If no arguments are given, read & execute commands from standard input.                 
+#Input                                                                                                                                                                          #Read & execute commands from each filename argument. If no arguments are given, read & execute commands from standard input.                 
 
 #Input format                
 #The input will be a series of lines. Each line will consist of a number of whitespace-separated words. The first word in a line will be the command, the following words will be arguments. Ignore lines that contain no words.                 
